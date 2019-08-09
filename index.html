@@ -1,1 +1,244 @@
-Under Construction
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Yoga Les Farges</title>
+    <meta name="description" content="Yoga Les Farge is a friendly Yoga studio based in Saint-Martial-d'Albarède, France">
+    <meta name="author" content="https://github.com/awdel">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <style>
+        *,
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            font-size: 16px;
+        }
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            body {
+                font-size: 14px;
+            }
+        }
+        @media only screen and (max-width:767px){
+            body {
+                font-size: 12px;
+            }
+        }
+        section{
+            overflow: hidden;
+            padding: 80px;
+        }
+        .center-content {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .button{
+            cursor: pointer;
+            background-color: transparent;
+            color: #eee;
+            border: 1px solid #eee;
+            border-radius: 3px;
+            padding: 12px 32px;
+            font-size: 0.8em;
+        }
+            .button:hover{
+                background-color: rgba(0,0,0,0.1);
+            }
+        i[class^="icon"]{
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        i.icon-email{
+            width: 32px;
+            height: 32px;;
+            background-image: url("img/icon-email.svg");
+        }
+        i.icon-phone{
+            width: 32px;
+            height: 32px;;
+            background-image: url("img/icon-phone.svg");
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            header .banner-img-container{
+                width: 100%;
+                height: 30vw;
+                overflow: hidden;
+            }
+            @media only screen and (min-width:1260px) and (max-width:1259px){
+                header .banner-img-container{
+                    height: 35vw;
+                }
+            }
+            @media only screen and (min-width:1024px) and (max-width:1259px){
+                header .banner-img-container{
+                    height: 40vw;
+                }
+            }
+            @media only screen and (min-width:768px) and (max-width:1023px){
+                header .banner-img-container{
+                    height: 45vw;
+                }
+            }
+            @media only screen and (max-width:767px){
+                header .banner-img-container{
+                    height: 50vw;
+                }
+            }
+                header .banner-img-container img{
+                    width: auto;
+                    height: 100%;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            header .title-container{
+                width: 100%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                header .title-container .title-bg{
+                    background-color: rgba(223,116,74,0.2);
+                    padding: 24px 56px 64px 56px;
+                }
+                    header .title-container .title-bg .title{
+                        font-family: 'Montserrat', sans-serif;
+                        text-align: center;
+                        font-size: 5em;
+                    }
+        main section.peach-bg{
+            background-color: #FEDCD2;
+        }
+        main section.powder-bg{
+            background-color: #BFD8D2;
+        }
+        main section.warm-bg{
+            background-color: #DF744A;
+            color: #eee;
+        }
+        .summary{
+            margin: 0 6vw;
+            font-size: 2em;
+            text-align: center;
+        }
+        .profile-img-container{
+            text-align: center;
+            margin: 60px 0;
+        }
+            .profile-img-container img{
+                border: 5px solid #eee;
+                border-radius: 160px;
+            }
+        .profile{
+            margin: 0 160px;
+            font-size: 1.2em;
+            text-align: center;
+            line-height: 1.6em;
+        }
+        .details-container{
+            display: flex;
+            flex-direction: row;
+            font-size: 1.2em;
+        }
+            .details-container .location{
+                width: 50%;
+            }
+                .details-container .location .map iframe{
+                    width: 90%;
+                }
+            .details-container .contact{
+                width: 50%;
+            }
+                .details-container .contact i{
+                    margin-right: 8px;
+                }
+                .details-container .contact .address .button{
+                    margin: 24px 0;
+                }
+                .details-container .contact .email,
+                .details-container .contact .phone{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px;
+                }
+                .details-container .contact .email a,
+                .details-container .contact .phone a{
+                    color: #eee;
+                }
+        footer{
+            
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="banner-img-container">
+            <img src="img/header-bg.jpg" alt="Yoga Les Farge" />
+        </div>
+        <div class="title-container">
+            <div class="title-bg">
+                <div class="title">Yoga<br/>Les Farges</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="powder-bg">
+            <div class="center-content">
+                <div class="summary">Yoga Les Farge is a friendly Yoga studio based in Saint-Martial-d'Albarède, France</div>
+                <div class="profile-img-container"><img src="img/profile.jpg" alt="Anne profile image" /></div>
+                <div class="profile">
+                    Anne has been practising yoga since 1998 and qualified as a teacher in 2008.<br/>
+                    She has taught students from nine to ninety and, alongside her private classes, has been employed to deliver yoga programmes for local authorities and a physiotherapy clinic.
+                </div>
+            </div>
+        </section>
+        <section class="warm-bg">
+            <div class="details-container">
+                <div class="location">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d724.1880999601613!2d1.033837835211261!3d45.322394240663066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ff3859d47cfdd5%3A0xb29e95eb9eddd14!2s6+Les+Farges%2C+24160+Saint-Martial-d&#39;Albar%C3%A8de%2C+France!5e0!3m2!1sen!2suk!4v1565359006675!5m2!1sen!2suk" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="address">
+                        6 Rue des Farges,<br/>
+                        24160 Saint-Martial-d'Albarède,<br/>
+                        France<br/>
+                        <button type="button" class="button" onclick="window.open('https://goo.gl/maps/W5d6BcipCifVivfL7','_blank')">GET DIRECTIONS</button>
+                    </div>
+                    <div class="email">
+                        <i class="icon-email"></i>
+                        <div><a href="mailto:yoga-lesfarges@gmail.com">yoga-lesfarges@gmail.com</a></div>
+                    </div>
+                    <div class="phone">
+                        <i class="icon-phone"></i>
+                        <div><a href="tel:+33648367993">+33 6 48 36 79 93</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+    </script>
+</body>
+</html>
