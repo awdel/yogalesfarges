@@ -23,19 +23,29 @@
             color: #333;
             font-size: 16px;
         }
-        @media only screen and (min-width:768px) and (max-width:1024px){
-            body {
-                font-size: 14px;
+        section{
+            overflow: hidden;
+            padding: 80px 60px;
+        }
+        @media only screen and (min-width:1280px) and (max-width:1920px){
+            section{
+                padding: 70px 51px;
+            }
+        }
+        @media only screen and (min-width:1024px) and (max-width:1279px){
+            section{
+                padding: 60px 44px;
+            }
+        }
+        @media only screen and (min-width:768px) and (max-width:1023px){
+            section{
+                padding: 50px 37px;
             }
         }
         @media only screen and (max-width:767px){
-            body {
-                font-size: 12px;
+            section{
+                padding: 40px 30px;
             }
-        }
-        section{
-            overflow: hidden;
-            padding: 80px;
         }
         .center-content {
             width: 100%;
@@ -80,12 +90,12 @@
                 height: 30vw;
                 overflow: hidden;
             }
-            @media only screen and (min-width:1260px) and (max-width:1259px){
+            @media only screen and (min-width:1280px) and (max-width:1920px){
                 header .banner-img-container{
                     height: 35vw;
                 }
             }
-            @media only screen and (min-width:1024px) and (max-width:1259px){
+            @media only screen and (min-width:1024px) and (max-width:1279px){
                 header .banner-img-container{
                     height: 40vw;
                 }
@@ -119,10 +129,50 @@
                     background-color: rgba(223,116,74,0.2);
                     padding: 24px 56px 64px 56px;
                 }
+                @media only screen and (min-width:1280px) and (max-width:1920px){
+                    header .title-container .title-bg{
+                        padding: 22px 52px 56px 52px;
+                    }
+                }
+                @media only screen and (min-width:1024px) and (max-width:1279px){
+                    header .title-container .title-bg{
+                        padding: 20px 48px 48px 48px;
+                    }
+                }
+                @media only screen and (min-width:768px) and (max-width:1023px){
+                    header .title-container .title-bg{
+                        padding: 18px 44px 40px 44px;
+                    }
+                }
+                @media only screen and (max-width:767px){
+                    header .title-container .title-bg{
+                        padding: 16px 40px 32px 40px;
+                    }
+                }
                     header .title-container .title-bg .title{
                         font-family: 'Montserrat', sans-serif;
                         text-align: center;
-                        font-size: 5em;
+                        font-size: 4.6em;
+                    }
+                    @media only screen and (min-width:1280px) and (max-width:1920px){
+                        header .title-container .title-bg .title{
+                            font-size:4em;
+                        }
+                    }
+                    @media only screen and (min-width:1024px) and (max-width:1279px){
+                        header .title-container .title-bg .title{
+                            font-size: 3.4em;
+                        }
+                    }
+                    @media only screen and (min-width:768px) and (max-width:1023px){
+                        header .title-container .title-bg .title{
+                            font-size: 2.8em;
+                        }
+                    }
+                    @media only screen and (max-width:767px){
+                        header .title-container .title-bg .title{
+                            font-size: 2em;
+                        }
                     }
         main section.peach-bg{
             background-color: #FEDCD2;
@@ -135,17 +185,91 @@
             color: #eee;
         }
         .summary{
-            margin: 0 6vw;
+            margin: 0 80px;
             font-size: 2em;
             text-align: center;
+        }
+        @media only screen and (min-width:1280px) and (max-width:1920px){
+            .summary{
+                margin: 0 80px;
+                font-size: 1.85em;
+            }
+        }
+        @media only screen and (min-width:1024px) and (max-width:1279px){
+            .summary{
+                margin: 0 50px;
+                font-size: 1.7em;
+            }
+        }
+        @media only screen and (min-width:768px) and (max-width:1023px){
+            .summary{
+                margin: 0 30px;
+                font-size: 1.55em;
+            }
+        }
+        @media only screen and (max-width:767px){
+            .summary{
+                margin: 0 0;
+                font-size: 1.4em;
+            }
         }
         .profile-img-container{
             text-align: center;
             margin: 60px 0;
         }
+        @media only screen and (min-width:1260px) and (max-width:1920px){
+            .profile-img-container{
+                margin: 55px 0;
+            }
+        }
+        @media only screen and (min-width:1024px) and (max-width:1259px){
+            .profile-img-container{
+                margin: 50px 0;
+            }
+        }
+        @media only screen and (min-width:768px) and (max-width:1023px){
+            .profile-img-container{
+                margin: 45px 0;
+            }
+        }
+        @media only screen and (max-width:767px){
+            .profile-img-container{
+                margin: 40px 0;
+            }
+        }
             .profile-img-container img{
+                width: 320px;
+                height: 320px;
                 border: 5px solid #eee;
                 border-radius: 160px;
+            }
+            @media only screen and (min-width:1260px) and (max-width:1920px){
+                .profile-img-container img{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 150px;
+                }
+            }
+            @media only screen and (min-width:1024px) and (max-width:1259px){
+                .profile-img-container img{
+                    width: 280px;
+                    height: 280px;
+                    border-radius: 140px;
+                }
+            }
+            @media only screen and (min-width:768px) and (max-width:1023px){
+                .profile-img-container img{
+                    width: 260px;
+                    height: 260px;
+                    border-radius: 130px;
+                }
+            }
+            @media only screen and (max-width:767px){
+                .profile-img-container img{
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 120px;
+                }
             }
         .profile{
             margin: 0 160px;
@@ -153,16 +277,72 @@
             text-align: center;
             line-height: 1.6em;
         }
+        @media only screen and (min-width:1260px) and (max-width:1920px){
+            .profile{
+                margin: 0 120px;
+                font-size: 1.15em;
+            }
+        }
+        @media only screen and (min-width:1024px) and (max-width:1259px){
+            .profile{
+                margin: 0 80px;
+                font-size: 1.1em;
+            }
+        }
+        @media only screen and (min-width:768px) and (max-width:1023px){
+            .profile{
+                margin: 0 40px;
+                font-size: 1.05em;
+            }
+        }
+        @media only screen and (max-width:767px){
+            .profile{
+                margin: 0 0;
+                font-size: 1em;
+            }
+        }
         .details-container{
             display: flex;
             flex-direction: row;
             font-size: 1.2em;
         }
+        @media only screen and (min-width:1260px) and (max-width:1920px){
+            .details-container{
+                font-size: 1.15em;
+            }
+        }
+        @media only screen and (min-width:1024px) and (max-width:1259px){
+            .details-container{
+                font-size: 1.1em;
+            }
+        }
+        @media only screen and (min-width:768px) and (max-width:1023px){
+            .details-container{
+                font-size: 1.05em;
+            }
+        }
+        @media only screen and (max-width:767px){
+            .details-container{
+                flex-direction: column-reverse;
+                font-size: 1em;
+            }
+        }
             .details-container .location{
                 width: 50%;
             }
+            @media only screen and (max-width:767px){
+                .details-container .location{
+                    width: 100%;
+                    margin-top: 32px;
+                }
+            }
                 .details-container .location .map iframe{
                     width: 90%;
+                }
+                @media only screen and (max-width:767px){
+                    .details-container .location .map iframe{
+                        width: 100%;
+                    }
                 }
             .details-container .contact{
                 width: 50%;
@@ -227,7 +407,7 @@
                     </div>
                     <div class="email">
                         <i class="icon-email"></i>
-                        <div><a href="mailto:yoga-lesfarges@gmail.com">yoga-lesfarges@gmail.com</a></div>
+                        <div><a href="mailto:anne@yogalesfarges.com">anne@yogalesfarges.com</a></div>
                     </div>
                     <div class="phone">
                         <i class="icon-phone"></i>
